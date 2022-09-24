@@ -4,28 +4,27 @@
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css" integrity="sha384-X8QTME3FCg1DLb58++lPvsjbQoCT9bp3MsUU3grbIny/3ZwUJkRNO8NPW6zqzuW9" crossorigin="anonymous">
+        <meta name="Description" content="Avec Booki trouvez votre Hébergement pour des vancances de rêves, en plain centre ville ou en pleine nature."> 
         <link rel="stylesheet" href="css/normalize.css"> 
         <link rel="stylesheet" href="css/style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com" >
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
-        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet" >
+        <script src="https://kit.fontawesome.com/5494c65830.js" crossorigin="anonymous"></script>
         <title>Booki</title>
     </head>
 
     <body>
         <header>
-            <nav>
-                <img id="logo" src="images/Booki.png" alt="Booki logo" />
-                <div class="categories"> 
-                <a href="#">Hébergements</a>
-                <a href="#">Activités</a>
-                </div>     
+            
+            <img id="logo" src="images/Booki.png" alt="Booki logo" width="70px" height="50px">
+            <nav class="catégories">
+                <a href="#Hébergements">Hébergements</a>
+                <a href="#Activités">Activités</a>      
             </nav>
+            
         </header>
 
         <main>
-            <div class="search">
+            <section>
+            <div class="desc">
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>
             </div>
@@ -33,99 +32,105 @@
             
             <form method="post" action="#">
                 <div class="form">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <input type="search" placeholder="Marseille, France">
+                    <i class="fas fa-map-marker-alt fa-lg"></i>
+                    <input id="search" type="search" placeholder="Marseille, France">
                     <input id="sub" type="submit" value="Rechercher">
-                </div>
+                </div>    
             </form>    
             
-            <div class="filtreM">
-                <h3>Filtres</h3>
-                    <div class="filtre1">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <a href="#">Economique</a>
+            <div class="AllFilter">
+                    <h3>Filtres</h3>
+                    <div class="filter">
+                    <div class="fafiltre"><i class="fa-solid fa-money-bill-wave fa-lg"></i></div>
+                    <div class="descfilter"><a href="#">Economique</a></div>
                     </div>
-                    <div class="filtre2">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <a href="#">Familial</a>
+                    <div class="filter">
+                    <div class="fafiltre"><i class="fa-solid fa-child-reaching fa-lg"></i></div>
+                    <div class="descfilter"><a href="#">Familial</a></div>
                     </div>
-                    <div class="filtre3">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <a href="#">Romantique</a>
+                    <div class="filter">
+                    <div class="fafiltre"><i class="fa-solid fa-heart fa-lg"></i></div>
+                    <div class="descfilter"><a href="#">Romantique</a></div>
                     </div>
-                    <div class="filtre4">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <a href="#">Animaux autotrisés</a>
+                    <div class="filter">
+                    <div class="fafiltre"><i class="fa-solid fa-dog fa-lg"></i></div>
+                    <div class="descfilter"><a href="#">Animaux autotrisés</a></div>
                     </div>
             </div>
             
-            <div class="info">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <p>Plus de 500 logements disponibles dans cette ville</p>
+            <div class="info">      
+                <div class="icoinfo"><i class="fa-solid fa-info fa-sm "></i></div>
+                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
-            
-            <div class="Hébmars">
-                <h2>Hebergements a Marseille</h2>
-                <img class="pichebmars" src="#" title="Auberge la cannebiere" />
-                <p>Nuit à partir de 25€</p>
-                <img class="pichebmars" src="#" title="Hôtel du port" />
-                <p>Nuit à partir de 52€</p>
-                <img class="pichebmars" src="#" title="hôtel les mouettes" />
-                <p>Nuit à parttir de 76€</p>
-                <img class="pichebmars" src="#" title="Hôtel de la mer" />
-                <p>Nuit à partir de 46€</p>
-                <img class="pichebmars" src="#" title="Auberge Le Panier" />
-                <p>Nuit à partir de 23€</p>
-                <img class="pichebmars" src="#" title="Hôtel chez Amina" />
-                <p>Nuit à partir de 96€</p>
-            </div>
+            </section> 
 
-            <aside>
+            <div class="hébpop">
+                <div class="hébmars">
+                    <h2 id="Hébergements">Hébergements a Marseille</h2>
+                    <div class="pichebmars">
+                    <div class="pict1">
+                    <img src="#" title="Auberge la cannebiere" alt="Auberge la cannebiere"/>
+                    <p>Nuit à partir de 25€</p>
+                    
+                    </div>
+                    <img src="#" title="Hôtel du port" alt="Hôtel du port"/>
+                    <p>Nuit à partir de 52€</p>
+                    <img src="#" title="hôtel les mouettes" alt="hôtel les mouettes"/>
+                    <p>Nuit à parttir de 76€</p>
+                    <img src="#" title="Hôtel de la mer" alt="Hôtel de la mer"/>
+                    <p>Nuit à partir de 46€</p>
+                    <img src="#" title="Auberge Le Panier" alt="Auberge Le Panier"/>
+                    <p>Nuit à partir de 23€</p>
+                    <img src="#" title="Hôtel chez Amina" alt="Hôtel chez Amina"/>
+                    <p>Nuit à partir de 96€</p>
+                    </div>
+                </div>    
+            
+
+                <aside class="mostpop">
                 <h2>Les plus populaires</h2>
-                <img class="popmars" src="#" title="Hôtel le soleil du matin" />
+                <img class="popmars" src="#" title="Hôtel le soleil du matin" alt="Hôtel le soleil du matin" />
                 <p>Nuit à partir de 128€</p>
-                <img class="popmars" src="#" title="Au coeur de l'eau Chambres d'hotes" />
+                <img class="popmars" src="#" title="Au coeur de l'eau Chambres d'hotes" alt="Au coeur de l'eau Chambres d'hotes"/>
                 <p>Nuit à partir de 71€</p>
-                <img class="popmars" src="#" title="hôtel Tout bleu et Blanc" />
+                <img class="popmars" src="#" title="hôtel Tout bleu et Blanc" alt="hôtel Tout bleu et Blanc"/>
                 <p>Nuit à parttir 68€</p>
+                </aside>
+            </div>
 
-            </aside>
-
-            <section>
+            
                  <div class="Actmars">
-                    <h2>Activités à Marseille</h2>
-                    <img class="picactmars" src="#" title="Vieux Port" />
-                    <img class="picactmars" src="#" title="Fort du Pomègues" />
-                    <img class="picactmars" src="#" title="Îles de Frioul" />     
-                    <img class="picactmars" src="#" title="Parc National des Calanques" />  
-                    <img class="picactmars" src="#" title="Notre-Dames-de-la-garde" />
-                    <img class="picactmars" src="#" title="Parc Longchamp" />
+                    <h2 id="Activités">Activités à Marseille</h2>
+                    <img class="picactmars" src="#" title="Vieux Port" alt="Vieux Port"/>
+                    <img class="picactmars" src="#" title="Fort du Pomègues" alt="Fort du Pomègues"/>
+                    <img class="picactmars" src="#" title="Îles de Frioul" alt="Îles de Frioul"/>     
+                    <img class="picactmars" src="#" title="Parc National des Calanques" alt="Parc National des Calanques" />  
+                    <img class="picactmars" src="#" title="Notre-Dames-de-la-garde" alt="Notre-Dames-de-la-garde"/>
+                    <img class="picactmars" src="#" title="Parc Longchamp" alt="Parc Longchamp"/>
                 </div>
-             </section>
+             
         </main>
        
         <footer>
-            <div class="bf1">
-                <h3>A propos</h3>
-                <a href="#">Fonctionnement du site</a>
-                <a href="#">Conditions générales de vente</a>
-                <a href="#">Données et confidentialité</a>
-            </div>
-            <div class="bf2">
-                <h3>Nos Hébergements</h3>
-                <a href="#">Charte qualité</a>
-                <a href="#">Soumetttre votre candidature</a>
-            </div>
-            <div class="bf3">
+            
+                <div class="bf">
+                    <h3>A propos</h3>
+                    <a href="#">Fonctionnement du site</a>
+                    <a href="#">Conditions générales de vente</a>
+                    <a href="#">Données et confidentialité</a>
+                </div>
+                <div class="bf">
+                    <h3>Nos Hébergements</h3>
+                    <a href="#">Charte qualité</a>
+                    <a href="#">Soumetttre votre hôtel</a>
+                </div>
+                <div class="bf">
                 <h3>Assistance</h3>
                 <a href="#">Centre d'aide</a>
                 <a href="#">Nous Contacter</a>
-            </div>
-
+                </div>
             
-
-
-
         </footer>
+        
     </body>
 </html>
