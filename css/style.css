@@ -16,24 +16,30 @@
     font-weight: bold;
     font-style: normal;
 }
-body
-{
+*{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{  
     max-width: 1400px;
     margin: auto;
-    padding: 0 25px;
+    padding: 0 10px;
     font-family: "raleway",sans-serif ;
     font-size: 16px;
 }
 header{
-    
-    height: 120px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+.fa-grey{
+    color: #f2f2f2;
+}
 #logo{
     padding: 20px 0 0 20px;
+    width: 100px; 
+    height: 70px;
 }
 nav{  
     display: flex;
@@ -44,34 +50,31 @@ a{
     color: inherit;  
     cursor: pointer;
 }
-header a
-{   
+header a{   
     padding: 49px 35px;
-    border-top: 3px solid transparent;
-    
+    border-top: 3px solid transparent;  
 }
 header a:hover{
     border-top: 3px solid #0065fc;
     color: #0065fc;
 }
-.desc{
-    height: 70px;
-    
-    
-}
 h1{
-    height: 20px;
     font-weight: bold;
-    font-size: 22px;
-    
+    font-size: 22px;  
 }
-.form
-{ 
+.desc{
+    margin-bottom: 10px;
+}
+.desc h1{
+    margin: 0;
+    margin-bottom: 4px;
+}
+.form{   
     padding: 10px 0;
     display: flex;
 }
 .form i{
-    padding: 25px 15px 25px 20px;
+    padding: 25px 17px 25px 20px;
     background-color: #f2f2f2;
     border: 1px solid #f2f2f2;
     border-radius: 20px 0 0 20px;
@@ -82,13 +85,11 @@ input{
 }
 input::placeholder {
     color:inherit;
-
     font-size:16px;  
 }  
 #search{
     border:1px solid #f2f2f2;
     font-weight: bold;
-    
 }
 #sub{
     font-weight: bold;
@@ -98,30 +99,27 @@ input::placeholder {
     color: white;
     cursor: pointer;
 }
-
-
-.AllFilter
-{
-    height: 100px;
+#sub:hover{
+    transform: scale(1.01);
+    box-shadow: 0 0 12px #deebff;
+    cursor: pointer;
+}
+.AllFilter{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 3%;
-}
-h3{
-    margin: 20px 0 30px 0;
+    gap: 2%; 
+    padding: 10px;
 }
 .filter{
-    
-    height: 50px;
-    margin: 20px 0 30px 0;
-    border: 2px solid #f2f2f2;
+    margin:5px;
+    border: 2.5px solid #f2f2f2;
     border-radius: 25px;
     display: flex;
     align-items:center ;
 }
-.fafiltre{
-    
+
+.fafiltre{ 
     margin: -3px;
     height: 55px;
     width: 55px;
@@ -130,32 +128,214 @@ h3{
     align-items:center;
     background-color: #deebff;
     color: #0065fc;
-    border-radius: 50%;
-    
+    border-radius: 50%;    
 } 
 .descfilter{
     font-weight: bold;
     margin: 0 20px 0 10px;
 }
 .filter:hover{
- 
- color: #0065fc;
+    color: #0065fc;
+    transform: scale(1.03);
+    box-shadow: 0 0 12px #f2f2f2;
+    cursor: pointer;
 }
 .info{
-    height: 25px;
     display: flex;
     align-items: center;
-    
+    margin:20px 0 30px 0;;
+    gap: 1%;
+}
+.info p{
+    margin: 0;
 }
 .icoinfo{
-    width: 25px;
     height: 25px;
+    width: 25px;
     border: 2px solid #f2f2f2;
-    margin-right: 10px;
     display: flex;
     align-items: center;
     justify-content:center;
     border-radius: 50%;
     color: #0065fc;
+}
+.HébMarspop{
+    display: flex;
+    flex-basis:100% ;
+    flex-wrap: wrap;
+    gap: 3%;
+    margin-bottom: 50px;
+}
+.HébMarspop h2{
+    margin: 40px 0 0 35px;
+}
+.HébMarspop i{
+    color: #0065fc;
+}
+.hébmars a{
+    display: block;
+    font-weight: bold;
+    padding: 10px 0 35px 35px; 
+    font-size: 19px; 
+}
+.hébmars{
+    flex-basis: 60%;
+    flex-grow: 1;
+    background: #f2f2f2;
+    border-radius: 25px; 
+}
+.mostpop{
+    flex-basis: 29%;
+    background: #f2f2f2;
+    border-radius: 25px;
+    flex-grow: 1;   
+}    
+.Flexfilterhéb{
+ display: flex;
+ justify-content: space-around;
+ flex-wrap: wrap;
+ padding: 20px;
+}
+.CardHéb{
+    border-radius:25px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 240px;
+    flex-grow: 1;
+    margin: 15px;
+}
+.CardHéb img{   
+    height: 140px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px 25px 0 0;
+    padding: 4px;   
+}
+.Carddesc{
+    margin: 0 0 10px 15px; 
+    font-size: 14px; 
+    line-height: 20px;
+}
+.iconetitlpop{
+   display: flex;
+   justify-content: space-between;
+}
+.iconetitlpop i{
+    color: black;
+    margin: 45px 35px  0 0 ;
+}
+.allcardpop{
+    padding: 38px 25px 0; 
+}
+.Cardpop{
+    width: auto; 
+    background-color: white;
+    display: flex;
+    padding: 4px;
+    margin-bottom: 30px;
+    border-radius: 25px ;
+}
+.Cardpictpop{ 
+    height: 150px;
+    width: 180px;
+    display: flex;
+}
+.Cardpop img{  
+    border-radius: 25px 0 0 25px;
+    height: 150px ;
+    width: 100%; 
+    object-fit: cover;    
+}
+.Carddescpop{
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+} 
+article h2{
+    margin-bottom: 25px
+}
+.Allactmars{
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+    margin-bottom: 40px;
+}
+.Allactmars img{
+    height: auto;
+    width:100%;
+    object-fit: cover;
+    border-radius: 25px 25px 0 0;
+}
+.Cardact{ 
+    height: auto;
+    width: 310px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    flex-wrap: wrap;
+}
+.Carddescact{
+    border-radius: 0 0 25px 25px ;
+    height: 55px;
+    padding: 20px 20px;   
+}
+.Cardpictact1and4{
+    display: flex;
+    height: 400px;
+}
+.Cardpictact2{
+    display: flex;
+    height:170px;
+}
+.Cardpictact3{
+    display: flex;
+    height: 120px;
 
+}
+.Cardpictact5{
+    display: flex;
+    height: 135px;
+}
+.Cardpictact6{
+    display: flex;
+    height: 155px;
+}
+.cardcolumn{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  
+}
+footer{
+    background: #f2f2f2;
+}
+.allinfofooter{
+    display: flex;
+    flex-basis: 100%;
+    padding: 35px 0;
+    flex-wrap: wrap;
+}
+.infofooter{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 33%;
+}
+.infofooter h3,a{
+    margin-bottom: 15px;
+}
+.boxshadow{
+    box-shadow: 0 0 8px #f2f2f2;
+}
+.boxshadow:hover{
+    transform: scale(1.03);
+    box-shadow: 0 0 12px #f2f2f2;
+    cursor: pointer;
+}
+.icogrey i{
+    color: #f2f2f2;
 }
