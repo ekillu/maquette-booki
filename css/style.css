@@ -76,15 +76,20 @@ h1{
 .form{   
     padding: 10px 0;
     display: flex;
-   
+    width: auto;
    
 }
-.form i{
+.form i:first-of-type{
     padding: 25px 17px 25px 20px;
     background-color: #f2f2f2;
     border: 1px solid #f2f2f2;
     border-radius: 20px 0 0 20px;
-}    
+} 
+.dnone{
+    color: transparent;
+    
+   
+}
 input{
     padding-right: 25px;
     padding-left: 20px;
@@ -247,15 +252,15 @@ input::placeholder {
     margin-bottom: 30px;
     border-radius: 25px ;
 }
-.Cardpictpop{ 
-    height: 150px;
-    width: 180px;
-    display: flex;
-}
+
+
+    
+
 .Cardpop img{  
     border-radius: 25px 0 0 25px;
     height: 150px ;
-    width: 100%; 
+    width: 180px; 
+    min-width: 130px;
     object-fit: cover;    
 }
 .Carddescpop{
@@ -264,9 +269,11 @@ input::placeholder {
   flex-direction: column;
   justify-content: space-between;
   font-size: 14px;
+  width: 100%;
 } 
 .descpop{
     line-height: 20px;
+    
 }
 article h2{
     margin-bottom: 25px
@@ -352,11 +359,11 @@ footer{
     margin-bottom: 15px;
 }
 .boxshadow{
-    box-shadow: 0 0 8px #f2f2f2;
+    box-shadow: 0 0 4px #b1acac;
 }
 .boxshadow:hover{
     transform: scale(1.03);
-    box-shadow: 0 0 12px #f2f2f2;
+    box-shadow: 0 0 12px #b1acac;
     cursor: pointer;
 }
 .icogrey i{
@@ -399,7 +406,7 @@ footer{
         border-bottom: 3px solid lightgray;
         padding: 35px 0 15px 0;   
     }
-   nav a:hover{
+    nav a:hover{
         border-bottom: 3px solid #0065FC;
         border-top-color: transparent;
     }
@@ -414,7 +421,24 @@ footer{
     } 
     .form{
         margin-bottom: 15px;
+       
     }
+    input {
+        
+    }
+    #sub{
+       display: none;   
+    }
+    .dnone{
+        color: white;
+        display: flex;
+        background-color: #0065FC;
+        padding: 20px 20px ;
+        border-radius: 15px;
+        position: relative;
+        right: 10px;
+    }
+    
     .AllFilter h3{
         width: 100%;
         margin-bottom: 10px;
@@ -427,6 +451,9 @@ footer{
     .mostpop{
         
         border-radius:0 ;
+    }
+    .Cardpop img{
+       
     }
     .hébmars{
         border-radius: 0;
@@ -445,9 +472,7 @@ footer{
 
     }
 
-    .cardcolumn{
-      flex-grow: 1;
-    }
+   
     article{
         padding: 0 25px;
     }
