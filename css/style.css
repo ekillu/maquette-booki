@@ -1,4 +1,4 @@
-@font-face {
+@font-face{
     font-family: "raleway";
     src: url("Raleway/raleway-regular-webfont.eot") format("eot"),
          url("Raleway/raleway-regular-webfont.woff2") format("woff2"),
@@ -7,7 +7,7 @@
     font-weight: normal;
     font-style: normal;
 }
-@font-face {
+@font-face{
     font-family: "raleway-bold";
     src: url("Raleway-bold/raleway-bold-webfont.eot") format("eot"),
          url("Raleway-bold/raleway-bold-webfont.woff2") format("woff2"),
@@ -489,17 +489,17 @@ footer{
        width: 100%;
     }
     .Carddescact{
-        font-size: 12px 16px;
+        font-size: 16px ;
         padding: 14px;
     }
     .Carddescpop{
         font-size: 13px;
         padding: 8px;
+    }
 }
 @media (max-width: 340px){
     body{
-        font-size: 14px ;
-       
+        font-size: 14px ;    
     }
     .Carddescpop{
         font-size: 13px;
@@ -507,6 +507,7 @@ footer{
     }
     .Cardpop img{
         min-width: 35%;
-       
     }
 }
+
+
